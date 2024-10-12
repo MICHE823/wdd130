@@ -3,7 +3,7 @@ nav {
  padding: 10px;
 }
 nav a {
-    color: white;
+    color: rgb;
     display: block;
     padding: 20px;
 }
@@ -11,7 +11,7 @@ h1{
     color: darkblue;
 }
 img{
-  width: 150px;
+  width: 90px;
   height: auto;
   border: 1px solid black;
   padding: 2px;
@@ -20,3 +20,26 @@ img{
 p {
     padding: 10px;
 }
+main {
+  max-width: 840px;  
+}
+aside{
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid red(0,0,0,0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+aside img{
+    width: 100px;
+    height: auto;
+}
+p { padding: 0;}
+footer{
+    margin: 15px;
+    border: 1px solid #000;
+    text-align: center;
+ }
+  
