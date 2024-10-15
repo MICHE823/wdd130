@@ -1,21 +1,37 @@
 nav {
- background-color: darkorange;
+ background-color: orangered;
  padding: 10px;
 }
 nav a {
-    color: rgb;
-    display: block;
+    color: black;
+    display: table-caption;
     padding: 20px;
+    text-align: center;
 }
 h1{
-    color: darkblue;
+    color: red;
 }
+aside{
+    width: 20cm;
+    margin: 1cm;
+    border: 1px solid rgba(red, green, blue, alpha); 
+padding: 1cm;
+background-color: aqua;
+color: #333;
+text-align: center;}
+aside img{
+    width: 200px;
+    height: auto;
+}
+
 img{
-  width: 90px;
+  width: 200px;
   height: auto;
   border: 1px solid black;
   padding: 2px;
   box-shadow: 0 0 30px gray;
+  text-align: center;
+  
 }
 p {
     padding: 10px;
