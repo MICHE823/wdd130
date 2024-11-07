@@ -1,98 +1,57 @@
-*{margin:0;
-    padding: 0;
-    box-sizing: border-box;
 
-}
 nav {
- background-color:  orangered;
- padding: 0px;
- margin: 4px; ;
+ background-color: rgb(0, 97, 139);
+ padding: 10px;
 }
 nav a {
     color: white;
-    direction: var(500cm);
     padding: 20px;
-    text-align: left;
-    box-shadow: blue;
+    display: block;
 
+
+}
+main{
+    max-width: 840 px;
 }
 h1  { 
-    color: black;
-    text-align: left
+    color:darkblue;
+
+    
+}
+ main img{
+    width: 150px;
+    height: auto
+    
 
 }
 
-
-aside{
-    width: 20cm;
-    margin: 1cm;
-    border: 1px solid rgba(red, green, blue, alpha); 
-padding: 1cm;
-background-color: aqua;
-color: #333;
-text-align: center;}
-aside img{
-    width: 200px;
-    height: auto;
-    margin: 15px;
-}
-
-img{
-  width: 200px;
-  height: auto;
-  border: solid blueviolet orangered;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
-  text-align: center;
-  float: inherit;
-  margin: 0 0 1rem 1rem;
-  
-}
 p {
     padding: 10px;
 }
-main {
-  max-width: 840px;  
-  color: blue;
-  text-align: left;
 
-  
-}
 aside{
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid red(0,0,0,0.2);
+    margin:1rem ;
+    border: 1px solid rgba(0,0,0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
+p { padding: 0;}
 aside img{
-    width: 150px;
+    width: 200px;
     height: auto;
-    background-color: aquamarine;
-    margin: 15px;
-    
-}
-aside h2{
-    position: absolute;
-    top: 100pix;
-    left: 100pix;
-}
-p { padding: 0;
-margin:1rem;}
-footer{
-    margin: 15px;
-    border: 1px solid #000;
-    text-align: center;
- }
 
- .box{
-    margin: 1rem;
-    border: 1px solid rgb(red, green, blue);
-  padding: 1rem;
-background-color: #eee;
-color: #000;}
-  footer{
-    text-decoration: double;
-  }
+ } 
+footer{
+    
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    
+
+ }
+ 
+ 
+ 
