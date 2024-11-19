@@ -1,0 +1,104 @@
+
+:root {
+  background-color: #eee;
+  --primary-color: #3498db;
+  --secondary-color: #eee;
+  --text-color: #eee;
+}
+
+
+ 
+  /* Général */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: steelblue;
+  color: white;
+  padding: 10px 0;
+}
+
+header .logo img {
+  width: 100px;
+  height: auto;
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  text-align: center;
+}
+
+.hero img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+}
+.company-mission{
+  width: 20rem;
+  margin:1rem ;
+  border: 1px solid rgba(0,0,0, 0.2);
+  padding: 3rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  float:right ;
+  
+}
+
+a{
+  text-decoration: none;
+}
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Adventure Section */
+.adventure-gallery img {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+footer { margin-top: 2px;
+  border-top: 2px solid red;
+  background-color: steelblue;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer .sociallinks a {
+  margin: 0 10px;
+  text-transform: none;
+}
+
+footer .sociallinks img {
+  width: 30px;
+  height: auto;
+  text-decoration: none;
+}
+
