@@ -88,22 +88,19 @@ main{
 .hero{
   border: #333 1px solid;
 }
-.hero-img {
-  max-width: 150px;
-  height: auto;
-margin: 10px;
-  box-shadow: 0 0 30px gray;
- padding: 2px;
- float: right;
- 
+.hero img{
+  float: right;
+  width: 200PX;
+}
 
-}/* Adventure Section */
+/* Adventure Section */
 .adventure {
   border: #333 1px solid;
   padding: 2rem;
   text-align: center;
   background-color: #f9f9f9;
 }
+
 
 .adventure h2 {
   margin-bottom: 1.5rem;
