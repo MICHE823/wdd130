@@ -97,34 +97,10 @@ h1{
   border: black solid 1px;
  
 }
-.container2 {
-	/* write declarations here */
- display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
 
-.two {
-	background-color: #ace;
-	height: 100px;
-}
 
-.container3 {
-	padding: 0;
-	/* write declarations here */
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-}
 
-.columns-3 {
-	/* write declaration here */
-	grid-column: 1/4;
-}
 
-.three {
-	margin: .25rem;
-	background-color: #abd;
-}
 
 .history img{
   display: grid;
@@ -137,8 +113,8 @@ h1{
   left: 400px;
 }
 .history p{
-  width: 300px;
-  text-align: left;
+
+  text-align: center;
   margin: 10px;
   padding: 1rem;
  
