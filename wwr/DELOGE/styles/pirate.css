@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header, footer {
+    background: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero {
+    background-image: url('../images/Image1.jpeg');
+    background-size: cover;
+    padding: 4rem 2rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.cta-button, .cta a {
+    background: #ffcc00;
+    color: #333;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.newsletter, .about-company, .contact-info, .trip-table, .contact-form {
+    margin: 2rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: center;
+}
