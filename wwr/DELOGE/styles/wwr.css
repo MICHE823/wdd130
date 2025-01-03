@@ -4,54 +4,50 @@
   --text-color: #333;
   --background-color: #f4f4f4;
 }
-/* General Styles */
+
+/* Reset and General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  margin: 0;
-  padding: 0;
   line-height: 1.6;
-  color: #333;
-}/* General Header Styling */
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Header Styles */
 .header {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: center;
- 
-  background-color: var(--primary-color); /* Deep blue for rafting theme */
-  color: white;
-  border-bottom: 4px solid #ffa500; /* Accent color */
-}
-
-/* Logo Container */
-.logo-container img{
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: start;
-  width: 100px;
-  border-radius: 50PX;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #004080;
+  color: #f4f4f4;
+}
+
+.logo img {
+  width: 200px;
+  border-radius: 50px;
   position: fixed;
-  padding: 50PX;
-  margin: 10PX;
+  padding: 50px;
+  margin: 10px;
+  position: absolute;
+  top: 200px;
+  left: 0;
 }
 
-*{
-  padding: 0;
-  margin: 0;
-}
 nav {
-background-color: rgb(0, 97, 139);
-padding: 10px;
-
-
+  background-color: rgb(0, 97, 139);
+  padding: 10px;
 }
-nav a {
-  color: white;
-  padding: 20px;
-  display: block;
-  left: 0PX;
-}
-  
-/* Navigation Styling */
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -61,8 +57,6 @@ nav a {
   list-style: none;
   display: flex;
   gap: 1.5rem;
-  margin: 0;
-  padding: 0;
 }
 
 .nav-list li a {
@@ -74,153 +68,90 @@ nav a {
 }
 
 .nav-list li a:hover {
-  color: #ffa500; /* Hover effect matches accent color */
+  color: #ffa500;
 }
 
-/* Responsive Design for Header */
-@media (max-width: 768px) {
-  .header {
-      grid-template-columns: 1fr;
-      text-align: center;
-  }
-
-  .nav {
-      justify-content: center;
-      margin-top: 1rem;
-  }
-
-  .nav-list {
-      flex-wrap: wrap;
-      gap: 1rem;
-  }
+/* Hero Section */
+.hero {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #333;
 }
-h1{
+
+.hero h1 {
   text-align: center;
 }
 
-.hero{
-  padding: 10px;
-  margin: 20px;
-  border: #333 1px solid;
-
-
+.hero img {
+  width: 150px;
+  height: auto;
+  float: right;
+  padding: 2px;
+  margin: 0 0 1rem 1rem;
+  box-shadow: 0 0 30px gray;
 }
 
-.history{
+/* History Section */
+.history {
+  background: #3498db;
   padding: 20px;
   margin: 20px;
-  border: black solid 1px;
- 
+  border: 1px solid black;
 }
 
-
-
-
-
-.history img{
-  display: grid;
-  padding: 20px;
-  margin: 30px;
-  width: 100%;
-  display: grid;
-  
-  top: 500px;
-  left: 400px;
+.history h2 {
+  text-align: center;
 }
-.history p{
 
+.history p {
   text-align: center;
   margin: 10px;
   padding: 1rem;
- 
+}
+
+.history img {
+  width: 200px;
+  position: absolute;
 }
 
 .history blockquote {
-  width: 300px;
-  text-align: right;
-  margin: 10px;
-  padding: 1rem;
-  position: absolute;
   max-width: 640px;
   text-align: center;
-  position: absolute;
-  top: 460px;
-  left: 800px;
- 
-  
-
+  margin: 10px auto;
+  padding: 1rem;
 
 }
+.history ul{
+  color: #f4f4f4;
+  text-align: center;
 
-.hero img{
-  height: auto;
-  float: right;
-  width: 150PX;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
-  margin: 0 0 1rem 1rem;
+
+  
 }
 
 /* Adventure Section */
 .adventure {
-  border: #333 1px solid;
   padding: 2rem;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color:#004080;
+  border: 1px solid #333;
+  color: #f4f4f4;
+}
+.adventure h2{
+  color: black;
+
 }
 
 
-.adventure h2 {
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  color: #004080;
-}
 
-.adventure-images {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap; /* Ensures responsiveness */
-}
 
-.adventure-images figure {
-  flex: 1; /* Equal width distribution */
-  max-width: 18%; /* Adjust max width for images */
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
   text-align: center;
 }
-
-.adventure-images img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.adventure-images figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #555;
-  font-style: italic;
-}
-
-
-
-  .history h2{
-    text-align: center;
-  
-  }
-  .history img{
-    width: 200px;
-    position: absolute;
-
- 
-  }
-
-
-footer{
-  background: var(--primary-color);
-}
-
 
 .social-media a {
   margin-left: 10px;
@@ -229,55 +160,269 @@ footer{
 .social-media img {
   width: 24px;
   height: auto;
-  float: right;
-  
 }
+
+/* Table Styling */
 table {
-  
-  
+  width: 100%;
   border-collapse: collapse;
-  border: 2px solid rgb(140 140 140);
-  font-family: sans-serif;
+  margin: 25px 0;
   font-size: 0.8rem;
-  letter-spacing: 1px;
-  padding: 20px;
-  margin: 25px;
 }
 
 caption {
   caption-side: bottom;
   padding: 10px;
   font-weight: 700;
-	 font-style: italic;
-}
-
-thead,
-tfoot {
-  background-color: rgb(228 240 245);
+  font-style: italic;
 }
 
 thead th {
-	background-color: #000;
-	color: #fff;
+  background-color: #000;
+  color: white;
 }
 
-th,
-td {
-  border: 1px solid rgb(160 160 160);
+th, td {
+  border: 1px solid rgb(160, 160, 160);
   padding: 8px 10px;
-}
-
-td:last-of-type {
   text-align: center;
 }
-tbody > tr:nth-of-type(even) {
-  background-color: rgb(237 238 242);
+
+tbody tr:nth-of-type(even) {
+  background-color: rgb(237, 238, 242);
 }
 
-tfoot th {
-  text-align: right;
+/* Aside Section */
+aside {
+  background: var(--secondary-color);
+  padding: 1rem;
 }
 
-tfoot td {
-  font-weight: bold;
+aside h2 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside p {
+  font-size: 1.1rem;
+  color: aliceblue;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .adventure-images figure {
+    max-width: 100%;
+  }
+}
+figcaption{
+
+  font-size: 2rem;
+}
+
+
+
+
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  
+}
+/* Header */
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.nav .nav-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav .nav-list li a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav .nav-list li a:hover {
+  color: #FFC107; /* Couleur secondaire */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: url('IMAGE/background.jpg') no-repeat center center/cover;
+  color: #fff;
+}
+
+.hero h1 {
+  color: #004080;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero article p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: black;
+}
+
+/* Adventure Section */
+.adventure {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.adventure h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #007BFF;
+}
+
+.adventure p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.adventure-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.adventure-images figure {
+  text-align: center;
+}
+
+.adventure-images img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.adventure-images img:hover {
+  transform: scale(1.05);
+}
+
+.adventure-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #007BFF;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.adventure-link:hover {
+  background: #0056b3;
+}
+
+/* History Section */
+.history {
+  padding: 2rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.history h2 {
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 1rem;
+}
+
+.history ul {
+  margin: 1rem auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.history ul li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer .author p {
+  margin: 0.5rem 0;
+}
+
+.footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer .social-media img {
+  width: 30px;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-media img:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav .nav-list {
+      flex-direction: column;
+      gap: 0.5rem;
+  }
+
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .adventure-images {
+      grid-template-columns: 1fr;
+  }
+
+  .history ul {
+      text-align: center;
+  }
 }
