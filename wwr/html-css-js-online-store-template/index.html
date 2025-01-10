@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store Template</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+</head>
+
+<body>
+    <!-- Navition Bar -->
+    <nav id="main-nav">
+        <div class="nav-container">
+            <div class="nav-page-title">ABC Online Store</div>
+            <div class="nav-right-side">
+                <div class="nav-search-box">
+                    <input type="search" id="product-search" placeholder="Search Producr Here...">
+                    <div class="search-icon">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                    </div>
+                </div>
+                <div class="nav-cart">
+                    <button id="store-cart-btn">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </button>
+                    <span id="cart-count-badge">0</span>
+                    <div id="cart-list">
+                        <div class="cart-list-title-container">
+                            <div class="cart-list-title">Cart List</div>
+                            <a href="javascrip:void(0)" class="cart-remove-all">Remove All</a>
+                        </div>
+                        <div class="cart-list-group">
+                            <div class="cart-item d-none">
+                                <div class="cart-img">
+                                    <img src="images/helmet.jpg" alt="">
+                                </div>
+                                <div class="cart-details">
+                                    <div class="cart-prod-title">Product 101</div>
+                                    <div class="cart-prod-price">300.00</div>
+                                    <div class="cart-qty-group">
+                                        <button class="cart-qty-min"><strong>-</strong></button>
+                                        <input type="number" class="card-qty" value="1" readonly>
+                                        <button class="cart-qty-add"><strong>+</strong></button>
+                                    </div>
+                                </div>
+                                <div class="cart-action">
+                                    <button class="cart-remove-prod" type="button"><span
+                                            class="material-symbols-outlined">delete</span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-list-totals">
+                            <div class="cart-total-label">Total</div>
+                            <div class="cart-total">0.00</div>
+                        </div>
+                        <div class="cart-list-action">
+                            <button class="cart-list-action-btn" type="button">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navition Bar -->
+    <!-- Template Main Wrapepr -->
+    <div id="main-wrapper">
+        <div id="product-list">
+            <div class="product-item d-none">
+                <div class="product-img">
+                    <img src="images/helmet.jpg" alt="Sample Product 101">
+                    <div class="product-actions">
+                        <button class="btn-action-view" type="button">
+                            <span class="material-symbols-outlined">visibility</span>
+                        </button>
+                        <button class="btn-action-add-cart" type="button">
+                            <span class="material-symbols-outlined">add_shopping_cart</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="product-details">
+                    <div class="product-title">Product 101</div>
+                    <div class="product-ratings">
+                        <div class="rating-star"></div>
+                        <div class="rating-star"></div>
+                        <div class="rating-star"></div>
+                        <div class="rating-star"></div>
+                        <div class="rating-star"></div>
+                    </div>
+                    <div class="product-price">&#8369;3,500.00</div>
+                    <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu
+                        augue efficitur, elementum turpis ut, rhoncus metus. Donec vel magna vestibulum, pharetra justo
+                        in, consectetur felis. Aliquam in massa cursus, posuere nibh eget, viverra orci.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="product-display-wrapper" class="">
+        <div class="product-display-action">
+            <button type="button" class="product-display-close-btn">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+        </div>
+        <div class="product-display-card">
+            <div class="product-display-img">
+                <img src="images/helmet.jpg" alt="">
+            </div>
+            <div class="product-display-details">
+                <div class="product-display-title">
+                    Product 101
+                </div>
+                <div class="product-display-ratings">
+                    <div class="product-display-ratings">
+                        <div class="rating-star"></div>
+                        <div class="rating-star"></div>
+                        <div class="rating-star"></div>
+                        <div class="rating-star"></div>
+                        <div class="rating-star"></div>
+                    </div>
+                </div>
+                <div class="product-display-price">
+                    3,500.00
+                </div>
+                <div class="product-display-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu augue efficitur, elementum turpis
+                    ut, rhoncus metus. Donec vel magna vestibulum, pharetra justo in, consectetur felis. Aliquam in
+                    massa cursus, posuere nibh eget, viverra orci.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Template Main Wrapepr -->
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

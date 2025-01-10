@@ -1,0 +1,45 @@
+[
+    {
+        "id" : 1,
+        "name": "Helmet 3826",
+        "price": 2092.71,
+        "rating" : 5,
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu augue efficitur, elementum turpis ut, rhoncus metus. Donec vel magna vestibulum, pharetra justo in, consectetur felis. Aliquam in massa cursus, posuere nibh eget, viverra orci.",
+        "img_path": "./images/helmet.jpg"
+    },{
+        "id" : 2,
+        "name": "Helmet 3235",
+        "price": 5303.79,
+        "rating" : 4,
+        "description": "Ut pellentesque turpis at lorem volutpat, sed malesuada tellus pretium. Sed vitae iaculis erat, varius volutpat enim. Nullam consectetur diam consequat felis auctor dignissim.",
+        "img_path": "./images/helmet-2.jpg"
+    },{
+        "id" : 3,
+        "name": "Helmet 6589",
+        "price": 5264.08,
+        "rating" : 5,
+        "description": "Ut lobortis tortor sagittis orci rhoncus condimentum. Integer a pharetra lectus. In blandit metus eu tortor pharetra, eget aliquam est vestibulum. Nunc bibendum egestas malesuada.",
+        "img_path": "./images/helmet-3.jpg"
+    },{
+        "id" : 4,
+        "name": "Helmet 8389",
+        "price": 7089.55,
+        "rating" : 4,
+        "description": "Nullam ac massa odio. Mauris facilisis fringilla dolor, sed tempor odio placerat in. Sed tristique nisi sed massa vehicula convallis. Donec auctor tempus dignissim. Curabitur ultricies faucibus feugiat.",
+        "img_path": "./images/helmet-4.jpg"
+    },{
+        "id" : 5,
+        "name": "Helmet 7937",
+        "price": 5610.98,
+        "rating" : 5,
+        "description": "Maecenas eu ante aliquam, fermentum libero vitae, egestas sem. Nunc pretium maximus mattis. Donec finibus sagittis diam in fermentum. Praesent in arcu vitae magna ultrices euismod. Aliquam et felis id nibh vulputate mollis.",
+        "img_path": "./images/helmet-5.jpg"
+    },{
+        "id" : 6,
+        "name": "Helmet 3499",
+        "price": 9632.28,
+        "rating" : 5,
+        "description": "Sed quis euismod lectus. Phasellus porttitor mi lorem, et laoreet tellus porttitor at. Fusce condimentum quam sit amet erat fermentum, vitae dictum velit pharetra.",
+        "img_path": "./images/helmet-6.jpg"
+    }
+]
